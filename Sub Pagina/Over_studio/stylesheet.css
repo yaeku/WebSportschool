@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap');
+
+
+/* Core styles */
+* {box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: white;
+}
+
+/* Grid */
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 85px repeat(6, minmax(150px, auto));
+}
+
+.menubalk {
+    grid-column: span 12;
+}
+
+.headerimage {
+    background: cadetblue;
+    grid-column: span 12;
+}
+
+.hoofdtekst {
+    grid-column: span 12;
+}
+
+.imagemotto {
+    grid-column: span 5;
+}
+
+.mottotekst {
+    grid-column: span 7;
+}
+
+.doelgericht {
+    grid-column: span 12;
+}
+
+.bigbuttons {
+    background: white;
+    grid-column: span 12;
+}
+
+.footer {
+    background: #46AD48;
+    grid-column: span 12;
+}
+
+/* style menu bar */
+.menubalk {
+    background-color: white;
+    width: 100%;
+    height: fit-content;
+}
+
+.logo {
+    height: 55px;
+    width: auto;
+    margin: 15px 0px 15px 40px;
+    float: left;
+}
+
+.navbar {
+    width: 50%;
+    height: 176px;
+    overflow: hidden;
+    padding-top: 26px;
+    float: right;
+    
+  }
+
+  .navbar ul {
+      float: left;
+  }
+
+  .navbar ul li {
+      float:left;
+      list-style: none;
+      position: relative;
+  }
+
+  .navbar ul li a {
+      display: block;
+      font-family: 'Archivo Black', sans-serif;
+      font-size: 20px;
+      color: #46AD48;
+      padding: 5px 20px 5px 20px;
+      text-decoration: none;
+  }
+
+  .navbar ul li a:hover {
+      color: #3e9c40;
+      border-bottom: 1px solid black;
+  }
+
+  .navbar ul li ul {
+      display: none;
+      position: absolute;
+      background-color: white;
+      box-shadow: 0px 0px 1px #000000;
+  }
+
+  .navbar ul li ul li {
+    width: 286px;
+  }
+
+  .navbar .dropdowntarget {
+    width: 200px;
+  }
+
+  .navbar ul li ul li a {
+    padding: 5px 0px 5px 20px;
+    font-size: 16px; 
+      
+}
+
+.navbar ul li ul li a:hover {
+    background-color: #46AD48 ;
+    color: white;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+}
+
+.dropdowntarget {
+    width: 200px;
+}
+
+.navbar ul li:hover ul {
+    display: block;
+}
+
+/* header */
+.headerimage {
+    background-image: url('../../Afbeeldingen/Homepage_header.jpg');
+    height: 550px;
+    background-size: cover;
+}
+
+/* main sectie */
+.hoofdtekst, .doelgericht {
+    background-color: white;
+    text-align: center;
+}
+
+.mottotekst {
+    background-color: #f3f3f3;
+    text-align: left;
+}
+
+.marginhoofdtekst, .doelgerichtmargin {
+    margin:0px 0px 50px 0px ;
+}
+
+.marginmottotekst {
+    margin: 25px 0px;
+}
+
+.hoofdtekst h1 {
+    color: #46AD48;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 68px;
+    margin-top: 50px;
+    line-height: 68px;
+}
+
+.hoofdtekst h2 {
+    font-size: 42px;
+    color: #46AD48 ;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    line-height: 42px;
+    margin-bottom: 10px;
+}
+
+.doelgericht h2 {
+    font-size: 60px;
+    color: #46AD48 ;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    line-height: 60px;
+    margin:50px 0px 20px 0px;
+}
+
+.mottotekst h2 {
+    font-size: 42px;
+    color: #46AD48 ;
+    font-family: 'Roboto', sans-serif;
+    font-style: italic;
+    line-height: 42px;
+    margin: 0px 0px 10px 75px;
+}
+
+.hoofdtekst p{
+    width: 800px;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #0E1111;
+}
+
+.mottotekst p {
+    width: 700px;
+    margin-left: 75px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #0E1111;
+}
+
+.doelgericht p {
+    width: 100%;
+    height: 150px;
+    font-size: 30px;
+    font-family: 'Archivo Black', sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px 3px #0E1111;
+}
+
+.healthblok {
+    background-color:#9cbc4a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.powerblok {
+    background-color:#C70112;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bodymblok {
+    background-color:#93a9ba;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagemotto {
+    background-image: url(Afbeeldingen/Team_vrouwen.jpg);
+    background-size: cover;
+    height: 476px;
+}
+
+/*big buttons sectie */
+.containerbuttons {
+    display: flex;
+    justify-content: center; 
+}
+
+.bigbutton1 {
+    position: relative;
+    background-image: url( 
+'../../Afbeeldingen/Lesrooster\ aanbod\ placeholder.jpg'); 
+            background-size: cover; 
+            width: 400px; 
+            height: 400px; 
+            margin: 50px;
+            border: none;
+            box-shadow: 0px 0px 10px #404040;
+            font-size: 38px;
+}
+
+.bigbutton2 {
+    position: relative;
+    background-image: url( 
+'../../Afbeeldingen/DSC_0093.jpg'); 
+            background-size: cover; 
+            width: 400px; 
+            height: 400px; 
+            margin: 50px;
+            border: none;
+            box-shadow: 0px 0px 10px #404040;
+            font-size: 38px;
+}
+
+.bigbutton3 {
+    position: relative;
+    background-image: url( 
+'../../Afbeeldingen/Contact\ placeholder.jpg'); 
+            background-size: cover; 
+            width: 400px; 
+            height: 400px; 
+            margin: 50px;
+            border: none;
+            box-shadow: 0px 0px 10px #404040;
+            font-size: 38px;
+}
+
+.bigbutton3::after, .bigbutton2::after, .bigbutton1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .3;
+    z-index: 0;
+}
+
+.bigbutton3:hover::after, .bigbutton2:hover::after, .bigbutton1:hover::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+}
+
+.containerbuttons p {
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 3px 2px 3px #000000;
+    position: relative;
+    z-index: 10;
+    color: white;
+    opacity: 0.8;
+}
+
+.bigbutton1:hover, .bigbutton2:hover, .bigbutton3:hover {
+    width: 430px;
+    height: 430px;
+    margin: 35px;
+    font-size: 44px;
+}
+
+.bigbutton1:hover p, .bigbutton2:hover p, .bigbutton3:hover p {
+    opacity: 1;
+}
+
+/* footer */
+.footer {
+    text-align: center;
+}
+
+.footer h1 {
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 24px;
+}
+
+.footer p {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.fa-facebook-f:before {
+    content: "\f39e";
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.fa-twitter:before {
+    content: "\f099";
+    color: white;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.fa-instagram:before {
+    content: "\f16d";
+    color: white;
+    font-size: 18px;
+}
